@@ -15,7 +15,7 @@ function searchPlace() {
       'Content-Type': 'application/json'
     },
     success: (data) => {
-      $('section.places').empty(); //clear existing content, if you dont , it appends the amenities and so you will repeated amenities over and over
+      $('section.places').empty(); //clears existing content
       data.forEach(place => $('section.places').append(
         `<article>
           <div class="title_box">
